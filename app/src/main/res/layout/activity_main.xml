@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sistema_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistema de Evaluacion"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginBottom="16dp"/>
+
+
+            <Spinner
+                android:id="@+id/tipo_spiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:entries="@array/tipo_spinner"
+                android:layout_below="@+id/sistema_text"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/practica_t_text"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:text="Practicas Teoricas"
+                android:textSize="18dp"
+                android:layout_below="@+id/tipo_spiner"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:id="@+id/prom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_toEndOf="@+id/practica_t_text"
+                android:padding="16dp"
+                android:text="Prom: 13.0"
+                android:layout_below="@+id/tipo_spiner"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/practica1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/practica_t_text"
+                android:text="Practica 1"/>
+
+            <EditText
+                android:id="@+id/prom1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/practica_t_text"
+                android:padding="16dp"
+                android:layout_below="@+id/prom"
+                android:hint="00"/>
+
+            <TextView
+                android:id="@+id/practica2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_below="@+id/practica1"
+                android:text="Practica 2"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/prom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/practica2"
+                android:padding="16dp"
+                android:layout_below="@+id/practica1"
+                android:hint="00"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/practicas_lab"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:layout_below="@+id/practica2"
+                android:text="Practicas Laboratorios"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/prom_lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/practicas_lab"
+                android:padding="16dp"
+                android:layout_below="@+id/practica2"
+                android:text="Prom: 14.5"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/practica1_lab"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_below="@+id/practicas_lab"
+                android:text="Practica 1"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/prom1_lab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/practica1_lab"
+                android:padding="16dp"
+                android:layout_below="@+id/practicas_lab"
+                android:hint="00"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/practica2_lab"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_below="@+id/practica1_lab"
+                android:text="Practica 2"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/prom2_lab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/practica2_lab"
+                android:padding="16dp"
+                android:layout_below="@+id/practica1_lab"
+                android:hint="00"
+                android:layout_marginBottom="16dp"/>
+
+
+            <TextView
+                android:id="@+id/practica3_lab"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_below="@+id/practica2_lab"
+                android:text="Practica 3"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/prom3_lab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/practica3_lab"
+                android:padding="16dp"
+                android:layout_below="@+id/practica2_lab"
+                android:hint="00"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/practica4_lab"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_below="@+id/practica3_lab"
+                android:text="Practica 4"/>
+
+            <EditText
+                android:id="@+id/prom4_lab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/practica4_lab"
+                android:padding="16dp"
+                android:layout_below="@+id/practica3_lab"
+                android:hint="00"
+                android:layout_marginBottom="16dp"/>
+
+
+            <TextView
+                android:id="@+id/Promedio_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:padding="30dp"
+                android:textColor="#0000FF"
+                android:layout_below="@+id/prom4_lab"
+                android:text="Promedio 14.5"/>
+
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:textColor="#F91708"
+                android:layout_below="@+id/Promedio_txt"
+                android:text="Aprobado!"/>
+
+
+            <Button
+                android:id="@+id/calcular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/result"
+                android:textSize="22dp"
+                android:textColor="#FFFF"
+                android:background="#5591DF"
+                android:text="Calcular"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CalculadoraApp</string>
+    <string-array name="tipo_spinner">
+     <item>A: 30%-T + 70%-L</item>
+     <item>B: 34%-T + 60%-L</item>
+     <item>C: 20%-T + 80%-L</item>
+    </string-array>
+</resources>
